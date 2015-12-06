@@ -5,3 +5,4 @@
 # Common build directory names
 build*
 b
+/install
