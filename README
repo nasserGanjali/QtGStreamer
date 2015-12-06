@@ -75,7 +75,8 @@ C++0x features in use:
 The build procedure is simple:
 
 $ mkdir build && cd build
-$ cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/installation/prefix
+$ cmake -DCMAKE_INSTALL_PREFIX=/armSysroot/usr -DQT_VERSION=4 -DCMAKE_VERBOSE_MAKEFILE=ON ..
+	*	if you want compile for arm platform use : -DCMAKE_TOOLCHAIN_FILE=~/project/qt-gstreamer/arm-toolchain.cmake 
 $ make
 $ make install
 
